@@ -1,0 +1,4 @@
+0x0001 2018-08-18T16:30:16UTC 2023-08-18T16:30:16UTC /CN=Puppet CA: devops.salas4linux.com.br
+0x0002 2018-08-18T16:30:17UTC 2023-08-18T16:30:17UTC /CN=devops.salas4linux.com.br
+0x0003 2018-08-18T16:37:43UTC 2023-08-18T16:37:43UTC /CN=docker.salas4linux.com.br
+0x0004 2018-08-18T16:39:58UTC 2023-08-18T16:39:58UTC /CN=automation.salas4linux.com.br

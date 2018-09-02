@@ -1,5 +1,5 @@
 
-# docker
+# capuz_vermelho
 
 Welcome to your new module. A short overview of the generated parts can be found in the PDK documentation at https://puppet.com/pdk/latest/pdk_generating_modules.html .
 
@@ -14,10 +14,10 @@ The README template below provides a starting point with details about what info
 #### Table of Contents
 
 1. [Description](#description)
-2. [Setup - The basics of getting started with docker](#setup)
-    * [What docker affects](#what-docker-affects)
+2. [Setup - The basics of getting started with capuz_vermelho](#setup)
+    * [What capuz_vermelho affects](#what-capuz_vermelho-affects)
     * [Setup requirements](#setup-requirements)
-    * [Beginning with docker](#beginning-with-docker)
+    * [Beginning with capuz_vermelho](#beginning-with-capuz_vermelho)
 3. [Usage - Configuration options and additional functionality](#usage)
 4. [Limitations - OS compatibility, etc.](#limitations)
 5. [Development - Guide for contributing to the module](#development)
@@ -31,7 +31,7 @@ This should be a fairly short description helps the user decide if your module i
 
 ## Setup
 
-### What docker affects **OPTIONAL**
+### What capuz_vermelho affects **OPTIONAL**
 
 If it's obvious what your module touches, you can skip this section. For example, folks can probably figure out that your mysql_instance module affects their MySQL instances.
 
@@ -47,7 +47,7 @@ If your module requires anything extra before setting up (pluginsync enabled, an
 
 If your most recent release breaks compatibility or requires particular steps for upgrading, you might want to include an additional "Upgrading" section here.
 
-### Beginning with docker
+### Beginning with capuz_vermelho
 
 The very basic steps needed for a user to get the module up and running. This can include setup steps, if necessary, or it can be an example of the most basic use of the module.
 

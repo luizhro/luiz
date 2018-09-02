@@ -1,0 +1,565 @@
+    1  ssh 192.168.99.20
+    2  apt-get  install python python-pip -y
+    3  apt-get install python python-pip -y
+    4  apt-get update
+    5  apt-get install python python-pip -y
+    6  pip install ansible
+    7  ansible --version
+    8  pwd
+    9  vim hosts
+   10  ansible -i hosts all -m ping 
+   11  ssh 192.168.99.20
+   12  ssh 192.168.99.30
+   13  ansible -i hosts all -m ping 
+   14  ssh 192.168.99.30
+   15  rpm -qa |grep python
+   16  ansible -i hosts all -m command -a 'ls /tmp/'
+   17  ansible -i hosts all -m command -a 'ls /root/'
+   18  ansible -i hosts all -m command -a 'free -h'
+   19  ansible -i hosts all -m command -a 'ss -lnxtp'
+   20  vim playbook.yml
+   21  ansible -i hosts  playbook.yml 
+   22  ansible-playbook -i hosts  playbook.yml 
+   23  vim playbook.yml
+   24  ansible-playbook -i hosts  playbook.yml 
+   25  vim playbook.yml
+   26  ansible-playbook -i hosts  playbook.yml [A
+   27  ansible-playbook -i hosts  playbook.yml
+   28  sl
+   29  LS -F
+   30  echo $PATH
+   31  vim playbook.yml 
+   32  ansible-playbook -i hosts playbook.yml 
+   33  vim playbook.yml 
+   34  ansible-playbook -i hosts playbook.yml 
+   35  vim playbook.yml 
+   36  ansible-playbook -i hosts playbook.yml 
+   37  vim playbook.yml 
+   38  ansible-playbook -i hosts playbook.yml 
+   39  vim playbook.yml 
+   40  ansible-playbook -i hosts playbook.yml 
+   41  vim playbook.yml 
+   42  ll
+   43  pwd
+   44  touch lanterna_verde
+   45  ansible-playbook -i hosts playbook.yml 
+   46  ls -larth
+   47  vim playbook.yml 
+   48  ansible-playbook -i hosts playbook.yml 
+   49  vim playbook.yml 
+   50  ansible-playbook -i hosts playbook.yml 
+   51  vim playbook.yml 
+   52  vi /etc/profile
+   53  vim playbook.yml 
+   54  ansible-playbook -i hosts playbook.yml 
+   55  vim playbook.yml 
+   56  ansible-playbook -i hosts playbook.yml 
+   57  vim playbook.yml 
+   58  ansible-playbook -i hosts playbook.yml 
+   59  vim playbook.yml 
+   60  ansible-playbook -i hosts playbook.yml 
+   61  vim playbook.yml 
+   62  ansible-playbook -i hosts playbook.yml 
+   63  vim playbook.yml 
+   64  ansible-playbook -i hosts playbook.yml 
+   65  vim playbook.yml 
+   66  ansible-playbook -i hosts playbook.yml 
+   67  ping automation
+   68  ping docker
+   69  ping docker.salas4linux.com.br
+   70  vim playbook.yml 
+   71  ansible-playbook -i hosts playbook.yml 
+   72  vim playbook.yml 
+   73  ansible-playbook -i hosts playbook.yml 
+   74  vim playbook.yml 
+   75  ansible-playbook -i hosts playbook.yml 
+   76  vim playbook.yml 
+   77  ansible-playbook -i hosts playbook.yml 
+   78  vim playbook.yml 
+   79  ansible-playbook -i hosts playbook.yml 
+   80  vim playbook.yml 
+   81  ansible-playbook -i hosts playbook.yml 
+   82  vim playbook.yml 
+   83  ansible-playbook -i hosts playbook.yml 
+   84  vim playbook.yml 
+   85  ansible-playbook -i hosts playbook.yml 
+   86  vim playbook.yml 
+   87  ansible-playbook -i hosts playbook.yml 
+   88  cp .bashrc  bashrc
+   89  vi bashrc 
+   90  ansible-playbook -i hosts playbook.yml 
+   91  vi bashrc 
+   92  vim playbook.yml 
+   93  vi bashrc 
+   94  vim playbook.yml 
+   95  ansible-playbook -i hosts playbook.yml 
+   96  vim playbook.yml 
+   97  ansible-playbook -i hosts playbook.yml 
+   98  vi .bashrc 
+   99  vim playbook.yml 
+  100  ansible-playbook -i hosts playbook.yml 
+  101  vim playbook.yml 
+  102  ansible-playbook -i hosts playbook.yml 
+  103  vim playbook.yml 
+  104  ansible-playbook -i hosts playbook.yml 
+  105  vim playbook.yml 
+  106  ansible-playbook -i hosts playbook.yml 
+  107  vim playbook.yml 
+  108  ansible-playbook -i hosts playbook.yml 
+  109  vi .bashrc 
+  110  vim .bashrc 
+  111  cat hosts
+  112  ansible-galaxy init marvin
+  113  ll
+  114  mkdir roles
+  115  mv marvin/ roles/
+  116  cd roles/
+  117  ll
+  118  cd marvin/
+  119  ll
+  120  ll -laR
+  121  clear
+  122  cd tasks/
+  123  ll
+  124  cat main.yml 
+  125  vim main.yml 
+  126  setxkbmap -model abnt -layout br
+  127  > prerequisitos.yml
+  128  > install_apache.yml
+  129  > install_httpd.yml
+  130  > deploy.yml
+  131  ll
+  132  vim prerequisitos.yml 
+  133  vim main.yml 
+  134  vim install_apache.yml 
+  135  vim install_httpd.yml
+  136  vim deploy.yml 
+  137  vim prerequisitos.yml 
+  138  vim deploy.yml q
+  139  vim prerequisitos.yml 
+  140  vim main.yml 
+  141  vim index.html
+  142  cd ../tasks/
+  143  vim main.yml 
+  144  vi install_apache.yml 
+  145  apt remove apache2
+  146  dpkg --purger apache2 apache2-bin apache2-date apache2-utils libaapache2-mod-php7.0
+  147  dpkg --purge apache2 apache2-bin apache2-date apache2-utils libaapache2-mod-php7.0
+  148  dpkg --purge apache2 apache2-bin apache2-data apache2-utils libaapache2-mod-php7.0
+  149  dpkg --purge apache2 apache2-bin apache2-data apache2-utils libapache2-mod-php7.0
+  150  apt remove apache2-bin apache2-data apache2-utils liapache2-mod-php7.0
+  151  apt remove apache2-bin apache2-data apache2-utils libpache2-mod-php7.0
+  152  ansible-playbook -i /root/hosts main.yml 
+  153  vi main.yml 
+  154  ansible-playbook -i /root/hosts main.yml 
+  155  vi main.yml 
+  156  ansible-playbook -i /root/hosts main.yml 
+  157  vi main.yml 
+  158  ansible-playbook -i /root/hosts main.yml 
+  159  vi main.yml 
+  160  ansible-playbook -i /root/hosts main.yml 
+  161  vi main.yml 
+  162  ansible-playbook -i /root/hosts main.yml 
+  163  vi main.yml 
+  164  ansible-playbook -i /root/hosts main.yml 
+  165  vi main.yml 
+  166  ansible-playbook -i /root/hosts main.yml 
+  167  vi main.yml 
+  168  ansible-playbook -i /root/hosts main.yml 
+  169  vim deploy.yml 
+  170  ls -alrht
+  171  vim deploy.yml 
+  172  vi install_httpd.yml 
+  173  vim prerequisitos.yml 
+  174  ansible-playbook -i /root/hosts main.yml 
+  175  vim deploy.yml 
+  176  cd ..
+  177  cd templates/
+  178  ll
+  179  pwd
+  180  cd -
+  181  ll
+  182  cd tasks/
+  183  ll
+  184  cp index.html  ../templates/
+  185  ansible-playbook -i /root/hosts main.yml 
+  186  vim prerequisitos.yml 
+  187  vim deploy.yml 
+  188  vi main.
+  189  vi main.yml 
+  190  pwd
+  191  vi ../templates/index.html 
+  192  ansible-playbook -i /root/hosts main.yml 
+  193  vim deploy.yml 
+  194  pwd
+  195  cd -
+  196  ansible-playbook -i /root/hosts main.yml 
+  197  cd -
+  198  vim deploy.yml 
+  199  ansible-playbook -i /root/hosts main.yml 
+  200  vim deploy.yml 
+  201  ansible-playbook -i /root/hosts main.yml 
+  202  vim deploy.yml 
+  203  ansible-playbook -i /root/hosts main.yml 
+  204  vim deploy.yml 
+  205  ansible-playbook -i /root/hosts main.yml 
+  206  vim deploy.yml 
+  207  ansible-playbook -i /root/hosts main.yml 
+  208  vim deploy.yml 
+  209  ansible-playbook -i /root/hosts main.yml 
+  210  vim deploy.yml 
+  211  ansible-playbook -i /root/hosts main.yml 
+  212  vim deploy.yml 
+  213  vim main.yml 
+  214  ansible-playbook -i /root/hosts main.yml 
+  215  pwd
+  216  ll
+  217  cd ..
+  218  pwd
+  219  cd -
+  220  cd ..
+  221  mkdir puppet
+  222  cd marvin/
+  223  ll
+  224  cd tasks/
+  225  ll
+  226  history |grep marvin
+  227  pwd
+  228  cd /root/roles/
+  229  ansible-galaxy puppet
+  230  ansible-galaxy init puppet
+  231  ll
+  232  rm -rf puppet/
+  233  ansible-galaxy init puppet
+  234  ll
+  235  cd puppet/
+  236  ll
+  237  cd tasks/
+  238  ll
+  239  pwd
+  240  cp ../../marvin/tasks/deploy.yml 
+  241  cp ../../marvin/tasks/deploy.yml .
+  242  cp ../../marvin/tasks/install_apache.yml .
+  243  mv install_apache.yml install_puppet.yml
+  244  vi install_puppet.yml 
+  245  ll
+  246  vi deploy.yml 
+  247  pwd
+  248  vi deploy.yml 
+  249  cp ../../marvin/tasks/prerequisitos.yml .
+  250  vi prerequisitos.yml 
+  251  vi deploy.yml 
+  252  mv deploy.yml prerequisitos.yml
+  253  vi prerequisitos.yml 
+  254  cp ../../marvin/tasks/install_httpd.yml .
+  255  mv install_httpd.yml install_puppet_redhat
+  256  vi install_puppet.yml 
+  257  vi install_puppet_debian.yml
+  258  cp install_puppet.yml install_puppet_redhat.yml
+  259  rm install_puppet.yml 
+  260  vi install_puppet_redhat
+  261  vi prerequisitos.yml 
+  262  vi install_puppet_redhat
+  263  vi install_puppet_debian.yml
+  264  vi prerequisitos.yml 
+  265  vi install_puppet_debian.yml
+  266  vi prerequisitos.yml 
+  267  vi install_puppet_debian.yml
+  268  vi install_puppet_redhat.yml 
+  269  cp install_puppet_debian.yml install_puppet_redhat.yml 
+  270  vi install_puppet_redhat.yml 
+  271  vi prerequisitos.yml 
+  272  ls -larth
+  273  vi install_puppet_redhat.yml 
+  274  - name: Instalar repo puppet - Redhat
+  275  - name: Instalar agent
+  276  history 
+  277  ansible-playbook -i /root/hosts prerequisitos.yml 
+  278  vi prerequisitos.yml 
+  279  ansible-playbook -i /root/hosts prerequisitos.yml 
+  280  vi prerequisitos.yml 
+  281  ansible-playbook -i /root/hosts prerequisitos.yml 
+  282  vi prerequisitos.yml 
+  283  pwd
+  284  vi /root/roles/marvin/vars/main.yml 
+  285  cd /root/roles/marvin/
+  286  ll
+  287  cd -
+  288  vi /root/roles/marvin/tasks/prerequisitos.yml 
+  289  vi prerequisitos.yml 
+  290  ansible-playbook -i /root/hosts prerequisitos.yml 
+  291  vi prerequisitos.yml 
+  292  ansible-playbook -i /root/hosts prerequisitos.yml 
+  293  vi prerequisitos.yml 
+  294  ansible-playbook -i /root/hosts prerequisitos.yml 
+  295  vi prerequisitos.yml 
+  296  vi main.yml 
+  297  pwd
+  298  cp /root/roles/marvin/tasks/main.yml .
+  299  vi main.yml 
+  300  ll
+  301  vi main.yml 
+  302  ansible-playbook -i /root/hosts prerequisitos.yml 
+  303  vi main.yml 
+  304  ansible-playbook -i /root/hosts prerequisitos.yml 
+  305  vi main.yml 
+  306  vi prerequisitos.yml 
+  307  ansible-playbook -i /root/hosts prerequisitos.yml 
+  308  vi prerequisitos.yml 
+  309  ansible-playbook -i /root/hosts prerequisitos.yml 
+  310  vi prerequisitos.yml 
+  311  ansible-playbook -i /root/hosts prerequisitos.yml 
+  312  vi prerequisitos.yml 
+  313  ansible-playbook -i /root/hosts prerequisitos.yml 
+  314  vi prerequisitos.yml 
+  315  ansible-playbook -i /root/hosts prerequisitos.yml 
+  316  vi main.yml 
+  317  vi prerequisitos.yml 
+  318  vi main.yml 
+  319  ansible-playbook -i /root/hosts prerequisitos.yml 
+  320  ansible-playbook -i /root/hosts main.yml 
+  321  cd /tmp/
+  322  ll
+  323  cd -
+  324  ll
+  325  vi install_puppet_debian.yml 
+  326  vi main.yml 
+  327  vi prerequisitos.yml 
+  328  vi install_puppet_debian.yml 
+  329  vi prerequisitos.yml 
+  330  vi install_puppet_redhat.yml 
+  331  vi install_puppet_debian.yml 
+  332  vi prerequisitos.yml
+  333  vi install_puppet_debian.yml 
+  334  ansible-playbook -i /root/hosts main.yml 
+  335  vi install_puppet_debian.yml 
+  336  vi install_puppet_redhat.yml 
+  337  ansible-playbook -i /root/hosts main.yml 
+  338  vi prerequisitos.yml
+  339  vi install_puppet_redhat.yml 
+  340  cd /tmp/
+  341  ls -larht
+  342  vi prerequisitos.yml
+  343  cd -
+  344  vi prerequisitos.yml
+  345  vi install_puppet_redhat.yml 
+  346  ansible-playbook -i /root/hosts main.yml 
+  347  vi install_puppet_debian.yml 
+  348  ansible-playbook -i /root/hosts main.yml 
+  349  SERVERHOST=syslog.dasa.com.br
+  350  echo $SERVERHOST
+  351  dpkg -l |grep puppet
+  352  puppet 
+  353  puppet --version
+  354  vi init.pp 
+  355  lsof -i :8140
+  356  netstat -nlatp |grep :8140
+  357  lsof -i :8140
+  358  cd ../../../environments/production/manifests/
+  359  pwd
+  360  vim site.pp 
+  361  puppet agent -t
+  362  cd /etc/puppetlabs/puppet
+  363  ll
+  364  vi puppet.conf 
+  365  vim ../code/environments/production/manifests/site.pp 
+  366  puppet agent -t --server devops.salas4linux.com.br
+  367  vim ../code/environments/production/manifests/site.pp 
+  368  cat /etc/puppetlabs/puppet/puppet.conf 
+  369  vim ../code/environments/production/manifests/site.pp 
+  370  puppet agent -t
+  371  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  372  puppet agent -t
+  373  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  374  puppet agent -t
+  375  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  376  puppet agent -t
+  377  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  378  puppet agent -t
+  379  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  380  puppet agent -t
+  381  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  382  puppet agent -t
+  383  getent passwd devops
+  384  pwd
+  385  vi /etc/puppetlabs/code/modules/base/manifests/init.pp 
+  386  cd ../
+  387  cd /etc/puppetlabs/code/modules/base/files/
+  388  vim bash_logout
+  389  cat /var/log/syslog 
+  390  cd /etc/puppetlabs/code/modules/
+  391  pdk new module mr_miracle
+  392  ss -lntp
+  393  ll
+  394  cd /etc/puppetlabs/code/modules/mr_miracle/manifests/
+  395  vi init.pp
+  396  pwd
+  397  vi init.pp
+  398  cd ../../../environments/production/manifests/
+  399  vi site.pp 
+  400  cd /etc/puppetlabs/puppet/ssl/
+  401  cd ..
+  402  ll
+  403  pwd
+  404  cd ..
+  405  ll
+  406  tar -cvf puppetserver.tar puppetserver/
+  407  ll
+  408  scp puppetserver.tar @192.168.99.1:
+  409  scp puppetserver.tar domingo@192.168.99.1:
+  410  ll
+  411  cd /root/
+  412  ll
+  413  tar -cvf ansible.tar .*
+  414  pwd
+  415  ll
+  416  cd ansible/
+  417  tar -cvf ansible.tar .*
+  418  tar -cvf /root/ansible.tar .*
+  419  rm -rf ansible.tar 
+  420  tar -cvf /root/ansible.tar .*
+  421  scp /root/ansible.tar  domingo@192.168.99.1:
+  422  pdk new module docker
+  423  cd /etc/puppetlabs/code/modules/
+  424  ll
+  425  cd -
+  426  ll
+  427  cd -
+  428  pdk new module docker
+  429  ll
+  430  vi docker/manifests/init.pp
+  431  cp ../modules/mr_miracle/manifests/init.pp .
+  432  pwd
+  433  ll
+  434  mv init.pp docker/manifests/
+  435  cd docker/manifests/
+  436  vi init.pp 
+  437  vi ../../capuz_vermelho/manifests/init.pp
+  438  vi ../../base/manifests/init.pp
+  439  vi init.pp 
+  440  vi ../../capuz_vermelho/manifests/init.pp
+  441  vi ../../base/manifests/init.pp
+  442  vi init.pp 
+  443  which yum
+  444  which ls
+  445  vi init.pp 
+  446  which curl
+  447  vi init.pp 
+  448  ll
+  449  history
+  450  pwd
+  451  ll
+  452  vim init.pp 
+  453  history |grep site
+  454  vim ../code/environments/production/manifests/site.pp
+  455  pwd
+  456  vi /etc/puppetlabs/code/environments/production/manifests/site.pp 
+  457  vim init.pp 
+  458  systemctl stop puppetserver
+  459  git --version
+  460  pwd
+  461  mkdir git
+  462  cd git/
+  463  ll
+  464  ls -larth
+  465  git init 
+  466  cd .git/
+  467  ls -larth
+  468  cd branches/
+  469  ll
+  470  cd ..
+  471  git config user.name "Luiz Rodrigues"
+  472  git config user.email "luizhro@gmail.com"
+  473  cd -
+  474  cd ..
+  475  pwd
+  476  ll
+  477  cat config 
+  478  git config --global user.name  "Luiz Rodrigues"
+  479  cat ~/.config/
+  480  git config --global  user.email "luizhro@gmail.com"
+  481  cat ~/.config/
+  482  ll
+  483  vim README.md
+  484  git status
+  485  pwd
+  486  ll
+  487  git add README.md 
+  488  cd ..
+  489  git add README.md 
+  490  cd -
+  491  mv README.md ../
+  492  cd -
+  493  git status
+  494  git add README.md 
+  495  git status
+  496  ll]
+  497  ll
+  498  git log
+  499  cd .git/objects/
+  500  git log
+  501  cd -
+  502  vim canario_negro.sh
+  503  bash canario_negro.sh 
+  504  vim README.md 
+  505  git statua
+  506  git status
+  507  git add all
+  508  git add --all
+  509  git status
+  510  git commit -m "Alteraçao do README e Criação do Script da Canario"
+  511  git status
+  512  git log --oneline
+  513  git log --graph 
+  514  bash canario_negro.sh 
+  515  vim canario_negro.sh
+  516  bash canario_negro.sh
+  517  git status
+  518  rm -
+  519  git status
+  520  git commit -m "Alteracao no Script da Canario"
+  521  git status
+  522  vim canario_negro.sh 
+  523  git status
+  524  git add .
+  525  git commit -m "Remocao de Linha"
+  526  git log --online
+  527  git log --oneline
+  528  git revert f213c14
+  529  git revert fe213c14
+  530  git revert fe13c14
+  531  cat canario_negro.sh 
+  532  git remote -v
+  533  git remote add github https://github.com/luizhro/luiz.git
+  534  git remote -v
+  535  git push github master
+  536  ls
+  537  git pull github master
+  538  ll
+  539  bash Arqueiro_Verde 
+  540  git branch 
+  541  git checkout  -b desenvolvimento
+  542  git branch teste
+  543  git branch 
+  544  vim canario_negro.sh 
+  545  git add .
+  546  git commit -m "Adicao em Dev"
+  547  git status
+  548  history 
+  549  vim canario_negro.sh 
+  550  git add
+  551  git add .
+  552  git commit -m "Nova Alteração"
+  553  git status
+  554  ll
+  555  rm -
+  556  git branch
+  557  gitr push github desenvolvimento
+  558  git push github desenvolvimento
+  559  bash canario_negro.sh 
+  560  git checkout master
+  561  git diff master desenvolvimento 
+  562  git merge desenvolvimento 
+  563  pwd
+  564  ll
+  565  history  > history.txt
